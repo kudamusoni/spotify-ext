@@ -1,0 +1,27 @@
+{
+    "name": "Spotify Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "storage",
+        "cookies"
+    ],
+    "web_accessible_resources": [ 
+        "/oauth2/*"
+    ],
+    "background": {
+        "scripts": ["background.js", "spotify.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "images/spotify.png"
+    }
+}
