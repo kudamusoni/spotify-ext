@@ -45,12 +45,6 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 
 console.log("YESSIR");
     
-// const spotify_url = "https://accounts.spotify.com/";
-// const request_url = "https://api.spotify.com/v1/";
-// const redirectUri = encodeURIComponent("https://bjmknkaficomjfpemgjiohaohianhknc.chromiumapp.org");
-// const client_id = "a0f8bd10bb3546abbc1ceaa261c14290";
-// const client_secret = "37bfa4e0a9c2474a98672c974855ae1d";
-
 // function oAuthPopup() {
 //     let auth_url = spotify_url+"authorize?client_id=" + client_id + "&response_type=code&redirect_uri=" + redirectUri;
 //     chrome.identity.launchWebAuthFlow({'url':auth_url,'interactive':true}, function(redirect_url){
